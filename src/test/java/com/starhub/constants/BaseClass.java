@@ -49,6 +49,12 @@ public class BaseClass
 	public  static void openApp()
 	{
 		
+		if (driver==null) {
+			
+		
+		
+		log.debug("About to start @BeforeSuite");
+		
 			try {
 				fis = new FileInputStream("C:\\Users\\KNOT\\eclipse-workspace\\EndToEndFlow\\src\\test\\resources\\PropertyFiles\\Locator.properties");
 			} catch (FileNotFoundException e) {
@@ -97,14 +103,17 @@ public class BaseClass
 			
 			config.setProperty("browser", browser);
 			
+			log.debug("Browser is configured as "+browser);
 			
 			if (config.getProperty("browser").equals("chrome"))
 			{
 		
 
-				System.setProperty("webdriver.chrome.driver", "C:\\Users\\KNOT\\eclipse-workspace\\EndToEndFlow\\src\\test\\resources\\Runnables\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver", "C:\\Users\\KNOT\\eclipse-workspace\\EndToEndFlow\\chromedriver.exe");
 				
 				driver = new ChromeDriver();
+				
+				log.debug("About to open chrome browser");
 				
 			} else if(config.getProperty("browser").equals("firefox")) 
 			{
@@ -114,8 +123,9 @@ public class BaseClass
 				
 				driver = new FirefoxDriver();
 				
-				
+				log.debug("About to open firefox brower");
 			}
+			
 			
 			
 
@@ -128,17 +138,21 @@ public class BaseClass
 			
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 			
+			log.debug("About to open the application under test");
+			
 			driver.get(config.getProperty("AUTSite"));
+			
+			log.debug("Opened application under test");
 			
 			 wait = new WebDriverWait(driver, 20);
 
 			
 		
 		
+		}
 		
 		
-		
-/*		System.setProperty("webdriver.chrome.driver", "C:\\Users\\KNOT\\eclipse-workspace\\EndToEndFlow\\src\\test\\resources\\Runnables\\chromedriver.exe");
+/*		System.setProperty("webdriver.chrome.driver", "C:\\Users\\KNOT\\eclipse-workspace\\EndToEndFlow\\chromedriver.exe");
 		
 		driver = new ChromeDriver();
 		
@@ -151,8 +165,8 @@ public class BaseClass
 		driver.get("http://www.way2automation.com/angularjs-protractor/banking");
 		
 		 wait = new WebDriverWait(driver, 20);
-*/
-		
+
+		*/
 
 		
 	}
