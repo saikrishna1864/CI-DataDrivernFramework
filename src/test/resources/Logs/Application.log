@@ -1,0 +1,18 @@
+[2020-04-11 16:57:54,803][    AddCustomerTest.java][main][DEBUG] - Reached first point of add customer test
+[2020-04-11 16:57:54,913][    AddCustomerTest.java][main][DEBUG] - Bank manager link is clicked
+[2020-04-11 16:57:54,915][    AddCustomerTest.java][main][DEBUG] - object for bhome has been created
+[2020-04-11 16:57:55,266][    AddCustomerTest.java][main][DEBUG] - true
+[2020-04-11 16:57:55,270][    AddCustomerTest.java][main][DEBUG] - add customer test assert is passed
+[2020-04-11 16:57:55,291][    AddCustomerTest.java][main][DEBUG] - add customer test alert is clicked
+[2020-04-11 16:58:01,162][    OpenAccountTest.java][main][DEBUG] - Stated execution of open account test
+[2020-04-11 16:58:01,162][    OpenAccountTest.java][main][DEBUG] - Clicked  on bank manager link
+[2020-04-11 16:58:01,163][    OpenAccountTest.java][main][DEBUG] - Created object for bhome for open account test
+[2020-04-11 16:58:01,448][          BaseClass.java][main][DEBUG] - CSS is the selector given
+[2020-04-11 16:58:04,881][BankManagerHomePage.java][main][DEBUG] - Customer selected
+[2020-04-11 16:58:04,881][          BaseClass.java][main][DEBUG] - CSS is the selector given
+[2020-04-11 16:58:08,168][BankManagerHomePage.java][main][DEBUG] - currency selected
+[2020-04-11 16:58:10,212][BankManagerHomePage.java][main][DEBUG] - Account created successfully with account Number :1016
+[2020-04-11 16:58:12,213][    OpenAccountTest.java][main][DEBUG] - true
+[2020-04-11 16:58:12,213][    OpenAccountTest.java][main][DEBUG] - true
+[2020-04-11 16:58:12,248][    OpenAccountTest.java][main][DEBUG] - open account test alert was accepted
+[2020-04-11 16:58:16,577][          BaseClass.java][main][DEBUG] - Closed the application
